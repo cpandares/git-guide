@@ -61,6 +61,21 @@
         </ul>
        </section>
 
+       <section>
+        <h2>Crear llave:</h2> 
+            <ul>
+                <li>ssh-keygen -t rsa -b 4096 -C "email@email.com"</li>
+                <li>Se puede grabar en otra carpeta. Por defecto dejemos como esta. Enter</li>
+                <li>Passphrase: puede ser opcional no recomentado</li>
+                <li>Listo la llave se guardo en la carpeta</li>
+                <li>Verificamos que el servido de llaves esta funcionando, en la consola copiamos, <b>eval $(ss-agent -s)</b></li>
+                <li>La llave publica la agregamos a nuestro entorno, cd ~/.ssh <br> ssh-add ~/.ssh/id_rsa - <br>Listo!</li>
+                
+
+            </ul>
+             
+       </section>
+
     </div>
 
     </div>
